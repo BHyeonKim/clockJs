@@ -10,7 +10,7 @@ function unTransMill(date, hours, minutes, seconds, milliseconds,xmasDay) {
   const dDate = Math.floor(dDay/(DAY*HOUR*MINUTE*MILLISECOND));
   const dHour = Math.floor((dDay%(DAY*HOUR*MINUTE*MILLISECOND))/(HOUR*MINUTE*MILLISECOND));
   const dMinute = Math.floor(((dDay%(DAY*HOUR*MINUTE*MILLISECOND))%(HOUR*MINUTE*MILLISECOND))/(MINUTE*MILLISECOND));
-  const dSecond = Math.floor((((dDay%(DAY*HOUR*MINUTE*MILLISECOND))%(HOUR*MINUTE*MILLISECOND))%(MINUTE*MILLISECOND))/MINUTE);
+  const dSecond = Math.floor((((dDay%(DAY*HOUR*MINUTE*MILLISECOND))%(HOUR*MINUTE*MILLISECOND))%(MINUTE*MILLISECOND))/MILLISECOND);
   console.log(`${dDate}days : ${dHour}hours : ${dMinute}minutes : ${dSecond}seconds remains`);
 };
 
